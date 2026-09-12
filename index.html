@@ -14,7 +14,7 @@
     <div class="scroll-progress" aria-hidden="true"><i></i></div>
     <header class="topbar" aria-label="主导航">
       <a class="brand" href="#top" aria-label="返回首页"><span class="brand-dot"></span><span>BINGBING.H</span></a>
-      <nav><a href="#protocol">方法</a><a href="#work">项目</a><a href="#experience">经历</a><a href="#contact">联系</a></nav>
+      <nav><a href="#showcase">作品</a><a href="#protocol">方法</a><a href="#experience">经历</a><a href="#contact">联系</a></nav>
       <a class="ghost-button" href="https://github.com/BonnyBing" target="_blank" rel="noreferrer noopener">GitHub ↗</a>
     </header>
 
@@ -27,8 +27,8 @@
         <button class="orbit-card orbit-card--one" type="button" data-depth="0.7" data-target="#protocol" data-message="先进入现场，把真正的问题聊清楚。">
           <span class="card-index">01</span><strong>需求进入现场</strong><small>教师与校长访谈</small>
         </button>
-        <button class="orbit-card orbit-card--two" type="button" data-depth="1.05" data-target="#work" data-message="再把方案变成可以运行的产品。">
-          <span class="card-index">02</span><strong>方案变成产品</strong><small>Agent · Web · Plugin</small>
+        <button class="orbit-card orbit-card--two" type="button" data-depth="1.05" data-target="#showcase" data-message="不用只听我介绍，直接运行我的作品。">
+          <span class="card-index">02</span><strong>方案变成产品</strong><small>5 个公开作品 · 点击体验</small>
         </button>
         <button class="orbit-card orbit-card--three" type="button" data-depth="0.85" data-target="#experience" data-message="最后对上线、培训和复盘负责。">
           <span class="card-index">03</span><strong>交付落到一线</strong><small>部署 · 培训 · 复盘</small>
@@ -38,7 +38,32 @@
         <div class="character-stage" data-depth="0.35"><div class="character-halo"></div><img src="./assets/fde-character.png" alt="黄冰冰的 3D 潮玩工程师形象，手持平板并挥手" /></div>
         <div class="hero-intro" aria-live="polite"><p class="intro-label">你好，我是黄冰冰</p><p class="intro-message">我在客户现场理解真实需求，用 AI、代码和交付能力把方案做成可运行的产品。</p></div>
         <div class="hero-metrics" aria-label="经历概览"><div><strong>4+</strong><span>年开发经历</span></div><div><strong>20</strong><span>所学校独立交付</span></div><div><strong>16</strong><span>所学校协同支持</span></div></div>
-        <a class="scroll-cue" href="#protocol" aria-label="查看交付方法"><span>SCROLL TO EXPLORE</span><i></i></a>
+        <a class="scroll-cue" href="#showcase" aria-label="查看交互作品"><span>SCROLL TO EXPLORE</span><i></i></a>
+      </section>
+
+      <section class="showcase section-pad" id="showcase" aria-labelledby="showcase-title">
+        <div class="section-number">00 / BUILD LAB</div>
+        <header class="section-header"><div><p class="kicker">DON'T JUST READ. TRY IT.</p><h2 id="showcase-title">我做的东西<br /><em>真的可以点。</em></h2></div><p>把技术放在可操作的作品里。这里是我的公开项目，能看效果、在线体验，也能追到实现代码。</p></header>
+        <div class="lab-console">
+          <div class="lab-topline"><span><i></i> BONNY / PROJECT EXPLORER</span><span>05 PUBLIC BUILDS</span></div>
+          <div class="lab-layout">
+            <div class="lab-selector" role="tablist" aria-label="选择公开作品" aria-orientation="vertical">
+              <button type="button" role="tab" id="project-tab-0" aria-selected="true" aria-controls="project-panel" data-project="0"><span>01 / WEBGL</span><strong>3D 支架设计模拟</strong><small>参数改变，结构实时响应</small><b aria-hidden="true">↗</b></button>
+              <button type="button" role="tab" id="project-tab-1" aria-selected="false" aria-controls="project-panel" tabindex="-1" data-project="1"><span>02 / GRAPH</span><strong>交互式知识图谱</strong><small>把知识连接变成可探索的图</small><b aria-hidden="true">↗</b></button>
+              <button type="button" role="tab" id="project-tab-2" aria-selected="false" aria-controls="project-panel" tabindex="-1" data-project="2"><span>03 / EDITOR</span><strong>HTML PPT 编辑器</strong><small>从生成页面到可视化编辑</small><b aria-hidden="true">↗</b></button>
+              <button type="button" role="tab" id="project-tab-3" aria-selected="false" aria-controls="project-panel" tabindex="-1" data-project="3"><span>04 / EXPERIMENT</span><strong>凤仙花虚拟实验室</strong><small>把课堂实验做成互动体验</small><b aria-hidden="true">↗</b></button>
+              <button type="button" role="tab" id="project-tab-4" aria-selected="false" aria-controls="project-panel" tabindex="-1" data-project="4"><span>05 / CLASSROOM</span><strong>语文课堂互动板</strong><small>让学生问题在课堂里被看见</small><b aria-hidden="true">↗</b></button>
+            </div>
+            <div class="lab-project" id="project-panel" role="tabpanel" aria-labelledby="project-tab-0" tabindex="0">
+              <div class="preview-browser"><div class="preview-chrome"><span aria-hidden="true">● ● ●</span><span id="preview-path">bonnybing / rdfz-xs-zhanjia-simulator</span><span>PREVIEW</span></div><div class="preview-image-wrap"><img id="project-preview" src="./assets/projects/rdfz-xs-zhanjia-simulator.webp" width="1440" height="940" loading="lazy" alt="3D 支架设计模拟系统的真实页面截图" /><button class="preview-play" type="button" data-launch-demo><span aria-hidden="true">▶</span> 运行这个作品</button></div></div>
+              <div class="project-description" aria-live="polite"><div class="project-title-row"><h3 id="project-title">3D 支架设计模拟</h3><span id="project-kind">交互仿真 / 教学应用</span></div><p id="project-summary">把支架角度、展品与观察视线放进同一个 3D 场景，让抽象的结构设计变成可以调整和观察的模型。</p><div class="project-stack" id="project-stack"><span>Three.js</span><span>WebGL</span><span>参数联动</span></div></div>
+              <div class="project-actions"><button class="button button--solid" type="button" data-launch-demo>在线体验 ↗</button><a class="button button--ghost" id="project-source" href="https://github.com/BonnyBing/rdfz-xs-zhanjia-simulator" target="_blank" rel="noopener noreferrer">查看源码 ↗</a><button class="detail-toggle" id="detail-toggle" type="button" aria-expanded="false" aria-controls="project-details">拆开看实现 +</button></div>
+              <div class="project-details" id="project-details" hidden><dl><div><dt>现场问题</dt><dd id="project-problem">结构设计只看平面图，不容易理解角度、视线与稳定性的关系。</dd></div><div><dt>技术实现</dt><dd id="project-implementation">Three.js 构建三维几何；界面参数驱动模型更新；共享支架参数联动展览与力学视图。</dd></div><div><dt>建议体验</dt><dd id="project-try">拖动旋转模型 → 调整开合角 → 切换「3D 物理重心」观察另一视图。</dd></div></dl><p>展示的是公开版本；智能体接口、云端保存等服务能力不等同于静态演示，部分功能可能需要单独配置。</p></div>
+            </div>
+          </div>
+          <div class="lab-footer"><span>真实页面截图 · 按需加载在线作品</span><span>INTERACTION IS THE PROOF.</span></div>
+        </div>
+        <noscript><p>在线作品：<a href="https://bonnybing.github.io/rdfz-xs-zhanjia-simulator/">3D 支架模拟</a> · <a href="https://bonnybing.github.io/rdfx-grade3-knowledge-graph/">知识图谱</a> · <a href="https://bonnybing.github.io/html-ppt-editor/">PPT 编辑器</a> · <a href="https://bonnybing.github.io/fengxianhua-lab/">虚拟实验室</a> · <a href="https://bonnybing.github.io/rdfx-yuwen-board/">课堂互动板</a></p></noscript>
       </section>
 
       <section class="protocol section-pad" id="protocol" aria-labelledby="protocol-title">
@@ -92,6 +117,7 @@
         <footer><span>黄冰冰 · AI 前线部署工程师</span><span>BEIJING / 2026</span></footer>
       </section>
     </main>
+    <dialog class="demo-dialog" id="demo-dialog" aria-labelledby="demo-title"><div class="demo-toolbar"><div><span>LIVE PROJECT / 公开作品</span><h2 id="demo-title">在线体验</h2></div><a id="demo-external" href="https://bonnybing.github.io/rdfz-xs-zhanjia-simulator/" target="_blank" rel="noopener noreferrer">新窗口打开 ↗</a><button type="button" id="demo-close" aria-label="关闭作品体验">×</button></div><p class="demo-notice" id="demo-status" role="status">正在加载公开作品；若显示异常，可在新窗口打开。3D / 编辑器类作品建议电脑体验。</p><div class="demo-frame" id="demo-frame"></div></dialog>
     <script src="./script.js"></script>
   </body>
 </html>
