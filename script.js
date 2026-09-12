@@ -178,7 +178,7 @@ const projects = [
     stack: ['JavaScript', 'ECharts', '图谱交互', 'API 模块'],
     summary: '以三年级数学与科学为已落地内容，把知识点和连接关系呈现为可缩放、可拖动的交互图谱，作为跨学科教学方案的公开模块。',
     problem: '教师需要找到跨学科知识连接，而不仅是得到一段泛化的活动建议。',
-    implementation: 'ECharts 渲染节点与关系；图谱核心逻辑共享过滤与布局计算；仓库另提供知识搜索、跨学科查询及图像快照 API。',
+    implementation: 'ECharts 渲染节点与关系；图谱核心逻辑共享过滤与布局计算；服务模块提供知识搜索、跨学科查询及图像快照 API。',
     try: '缩放与拖动图谱 → 查看知识节点和连接。云端快照与保存 API 需要部署环境，不视为静态页已验证能力。'
   },
   {
@@ -226,8 +226,7 @@ function selectProject(index) {
   const preview = document.querySelector('#project-preview');
   preview.src = `./assets/projects/${project.slug}.webp`;
   preview.alt = `${project.title}的真实页面截图`;
-  document.querySelector('#preview-path').textContent = `bonnybing / ${project.slug}`;
-  document.querySelector('#project-source').href = `https://github.com/BonnyBing/${project.slug}`;
+  document.querySelector('#preview-path').textContent = `${project.stack[0]} / ${project.title}`;
   document.querySelector('#project-stack').replaceChildren(...project.stack.map((label) => {
     const tag = document.createElement('span'); tag.textContent = label; return tag;
   }));
